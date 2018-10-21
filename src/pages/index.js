@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
+import { GridContainer, GridItem, TextLink } from '../components/styled';
 
 const IndexPage = () => (
   <StaticQuery
@@ -18,17 +19,17 @@ const IndexPage = () => (
     `}
     render={({ allDirectory: { edges } }) => (
       <Layout>
-        <ul>
+        <GridContainer>
           {edges.map(({ node: { id, name } }) => (
-            <li key={id}>
+            <GridItem key={id}>
               {name === 'data' ? (
-                <Link to="/info">info</Link>
+                <TextLink to="/info">info</TextLink>
               ) : (
-                <Link to={name}>{name}</Link>
+                <TextLink to={name}>{name}</TextLink>
               )}
-            </li>
+            </GridItem>
           ))}
-        </ul>
+        </GridContainer>
       </Layout>
     )}
   />

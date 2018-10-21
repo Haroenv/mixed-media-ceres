@@ -1,6 +1,7 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import { GridContainer, GridItem, TextLink } from '../components/styled';
 
 export default ({
   data: {
@@ -9,7 +10,7 @@ export default ({
 }) => {
   return (
     <Layout>
-      <ul>
+      <GridContainer>
         {edges
           .map(({ node: { id, name, fields, childMarkdownRemark } }) => {
             const slug = fields ? fields.slug : childMarkdownRemark.fields.slug;
@@ -20,11 +21,11 @@ export default ({
             };
           })
           .map(({ id, slug, name }) => (
-            <li key={id}>
-              <Link to={slug}>{name}</Link>
-            </li>
+            <GridItem key={id}>
+              <TextLink to={slug}>{name}</TextLink>
+            </GridItem>
           ))}
-      </ul>
+      </GridContainer>
     </Layout>
   );
 };
