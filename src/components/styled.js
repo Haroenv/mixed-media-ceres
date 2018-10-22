@@ -224,24 +224,17 @@ const colors = [
   },
 ];
 
+const getRandomColors = () => colors[Math.floor(Math.random() * colors.length)];
+
 export class GridItem extends Component {
-  state = {
-    color: 'black',
-    backgroundColor: 'tomato',
-  };
+  state = getRandomColors();
   render() {
     return (
       <StyledGridItem
         color={this.state.color}
         backgroundColor={this.state.backgroundColor}
         onMouseLeave={() => {
-          const { color, backgroundColor } = colors[
-            Math.floor(Math.random() * colors.length)
-          ];
-          this.setState({
-            color,
-            backgroundColor,
-          });
+          this.setState(getRandomColors());
         }}
       >
         {this.props.children}
