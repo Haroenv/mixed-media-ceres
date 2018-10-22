@@ -20,214 +20,217 @@ export const GridContainer = styled('div')`
 const StyledGridItem = styled('div')`
   border-right: ${border};
   border-bottom: ${border};
-  padding: 2em 0.5em;
   text-align: center;
+
+  a {
+    padding: 2em;
+  }
 
   &:hover {
     background-color: ${props => props.backgroundColor};
-    color: ${props => props.color};
+    color: ${props => props.foregroundColor};
   }
 `;
 
 const colors = [
   {
-    color: '#f6a843',
+    foregroundColor: '#f6a843',
     backgroundColor: '#383856',
   },
   {
-    color: '#86d855',
+    foregroundColor: '#86d855',
     backgroundColor: '#181c0f',
   },
   {
-    color: '#339a40',
+    foregroundColor: '#339a40',
     backgroundColor: '#000f47',
   },
   {
-    color: '#8a8e38',
+    foregroundColor: '#8a8e38',
     backgroundColor: '#20030f',
   },
   {
-    color: '#14116a',
+    foregroundColor: '#14116a',
     backgroundColor: '#08b690',
   },
   {
-    color: '#f92420',
+    foregroundColor: '#f92420',
     backgroundColor: '#0c0517',
   },
   {
-    color: '#757fa2',
+    foregroundColor: '#757fa2',
     backgroundColor: '#2d0628',
   },
   {
-    color: '#034f50',
+    foregroundColor: '#034f50',
     backgroundColor: '#eeb456',
   },
   {
-    color: '#792298',
+    foregroundColor: '#792298',
     backgroundColor: '#b3da4a',
   },
   {
-    color: '#626b65',
+    foregroundColor: '#626b65',
     backgroundColor: '#f3fc86',
   },
   {
-    color: '#f513eb',
+    foregroundColor: '#f513eb',
     backgroundColor: '#1d0461',
   },
   {
-    color: '#e5c726',
+    foregroundColor: '#e5c726',
     backgroundColor: '#23155c',
   },
   {
-    color: '#9a7d98',
+    foregroundColor: '#9a7d98',
     backgroundColor: '#030c4a',
   },
   {
-    color: '#e0f51b',
+    foregroundColor: '#e0f51b',
     backgroundColor: '#6b4161',
   },
   {
-    color: '#c9b035',
+    foregroundColor: '#c9b035',
     backgroundColor: '#503188',
   },
   {
-    color: '#b4d969',
+    foregroundColor: '#b4d969',
     backgroundColor: '#002d54',
   },
   {
-    color: '#519780',
+    foregroundColor: '#519780',
     backgroundColor: '#041850',
   },
   {
-    color: '#eb7a03',
+    foregroundColor: '#eb7a03',
     backgroundColor: '#173224',
   },
   {
-    color: '#fe787d',
+    foregroundColor: '#fe787d',
     backgroundColor: '#1622a0',
   },
   {
-    color: '#2cf1f3',
+    foregroundColor: '#2cf1f3',
     backgroundColor: '#19495a',
   },
   {
-    color: '#4bf763',
+    foregroundColor: '#4bf763',
     backgroundColor: '#5b2577',
   },
   {
-    color: '#45b63b',
+    foregroundColor: '#45b63b',
     backgroundColor: '#292b15',
   },
   {
-    color: '#f9652b',
+    foregroundColor: '#f9652b',
     backgroundColor: '#191f22',
   },
   {
-    color: '#770ff0',
+    foregroundColor: '#770ff0',
     backgroundColor: '#dbff92',
   },
   {
-    color: '#e0b03e',
+    foregroundColor: '#e0b03e',
     backgroundColor: '#150d6d',
   },
   {
-    color: '#6de131',
+    foregroundColor: '#6de131',
     backgroundColor: '#63293f',
   },
   {
-    color: '#678d9d',
+    foregroundColor: '#678d9d',
     backgroundColor: '#3b091c',
   },
   {
-    color: '#f29881',
+    foregroundColor: '#f29881',
     backgroundColor: '#480840',
   },
   {
-    color: '#f3d5c9',
+    foregroundColor: '#f3d5c9',
     backgroundColor: '#714b35',
   },
   {
-    color: '#dcda4a',
+    foregroundColor: '#dcda4a',
     backgroundColor: '#2120dc',
   },
   {
-    color: '#df985b',
+    foregroundColor: '#df985b',
     backgroundColor: '#213977',
   },
   {
-    color: '#e83f63',
+    foregroundColor: '#e83f63',
     backgroundColor: '#160551',
   },
   {
-    color: '#87c8a4',
+    foregroundColor: '#87c8a4',
     backgroundColor: '#2c3b83',
   },
   {
-    color: '#7d3971',
+    foregroundColor: '#7d3971',
     backgroundColor: '#c5cf96',
   },
   {
-    color: '#06fe21',
+    foregroundColor: '#06fe21',
     backgroundColor: '#18541f',
   },
   {
-    color: '#daed28',
+    foregroundColor: '#daed28',
     backgroundColor: '#222232',
   },
   {
-    color: '#336f53',
+    foregroundColor: '#336f53',
     backgroundColor: '#d0f3f9',
   },
   {
-    color: '#c34493',
+    foregroundColor: '#c34493',
     backgroundColor: '#fffdf7',
   },
   {
-    color: '#872902',
+    foregroundColor: '#872902',
     backgroundColor: '#e5f95e',
   },
   {
-    color: '#e37ae6',
+    foregroundColor: '#e37ae6',
     backgroundColor: '#022129',
   },
   {
-    color: '#ce89d7',
+    foregroundColor: '#ce89d7',
     backgroundColor: '#11262e',
   },
   {
-    color: '#9b9eab',
+    foregroundColor: '#9b9eab',
     backgroundColor: '#1a090b',
   },
   {
-    color: '#df45a4',
+    foregroundColor: '#df45a4',
     backgroundColor: '#02012f',
   },
   {
-    color: '#3a2dbc',
+    foregroundColor: '#3a2dbc',
     backgroundColor: '#fdca0f',
   },
   {
-    color: '#2ed871',
+    foregroundColor: '#2ed871',
     backgroundColor: '#1e19df',
   },
   {
-    color: '#baa0b1',
+    foregroundColor: '#baa0b1',
     backgroundColor: '#0e1428',
   },
   {
-    color: '#a45766',
+    foregroundColor: '#a45766',
     backgroundColor: '#effeba',
   },
   {
-    color: '#817ff0',
+    foregroundColor: '#817ff0',
     backgroundColor: '#1c1243',
   },
   {
-    color: '#723539',
+    foregroundColor: '#723539',
     backgroundColor: '#cbd040',
   },
   {
-    color: '#29f5b6',
+    foregroundColor: '#29f5b6',
     backgroundColor: '#8b0c3c',
   },
 ];
@@ -239,7 +242,7 @@ export class GridItem extends Component {
   render() {
     return (
       <StyledGridItem
-        color={this.state.color}
+        foregroundColor={this.state.foregroundColor}
         backgroundColor={this.state.backgroundColor}
         onMouseLeave={() => {
           this.setState(getRandomColors());
