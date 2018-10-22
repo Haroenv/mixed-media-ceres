@@ -4,6 +4,14 @@ import React, { Component } from 'react';
 
 export const border = '1px solid black';
 
+export const Content = styled('div')`
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 0.67em 1em 1.45em;
+  border: ${border};
+  border-top: none;
+`;
+
 export const GridContainer = styled('div')`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
