@@ -21,228 +21,58 @@ const StyledGridItem = styled('div')`
   border-right: ${border};
   border-bottom: ${border};
   text-align: center;
+  background-color: ${props => props.backgroundColor};
+  color: ${props => props.foregroundColor};
 
   a {
     padding: 2em;
   }
-
-  &:hover {
-    background-color: ${props => props.backgroundColor};
-    color: ${props => props.foregroundColor};
-  }
 `;
-
+/*
 const colors = [
   {
     foregroundColor: 'white',
-    backgroundColor: '#383856',
+    backgroundColor: 'red',
   },
   {
     foregroundColor: 'white',
-    backgroundColor: '#181c0f',
+    backgroundColor: 'black',
   },
   {
     foregroundColor: 'white',
-    backgroundColor: '#000f47',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#20030f',
+    backgroundColor: 'blue',
   },
   {
     foregroundColor: 'black',
-    backgroundColor: '#08b690',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#0c0517',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#2d0628',
+    backgroundColor: 'green',
   },
   {
     foregroundColor: 'black',
-    backgroundColor: '#eeb456',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#b3da4a',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#f3fc86',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#1d0461',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#23155c',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#030c4a',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#503188',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#002d54',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#041850',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#173224',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#1622a0',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#19495a',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#5b2577',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#292b15',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#191f22',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#dbff92',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#150d6d',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#63293f',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#3b091c',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#480840',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#714b35',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#2120dc',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#213977',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#160551',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#2c3b83',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#c5cf96',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#18541f',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#222232',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#d0f3f9',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#fffdf7',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#e5f95e',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#022129',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#11262e',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#1a090b',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#02012f',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#fdca0f',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#1e19df',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#0e1428',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#effeba',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: '#1c1243',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#cbd040',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: '#29f5b6',
+    backgroundColor: 'yellow',
   },
 ];
+*/
 
-const getRandomColors = () => colors[Math.floor(Math.random() * colors.length)];
+const getRandom255 = () => Math.round(Math.random() * 255);
+const getRandomColors = () => ({
+  foregroundColor: 'black',
+  backgroundColor: `rgb(${[getRandom255(), getRandom255(), getRandom255()].join(
+    ','
+  )})`,
+});
+//const getRandomColors = () => colors[Math.floor(Math.random() * colors.length)];
 
 export class GridItem extends Component {
-  state = getRandomColors();
+  state = {
+    foregroundColor: 'black',
+    backgroundColor: 'white',
+  };
   render() {
     return (
       <StyledGridItem
         foregroundColor={this.state.foregroundColor}
         backgroundColor={this.state.backgroundColor}
-        onMouseLeave={() => {
-          this.setState(getRandomColors());
-        }}
+        onMouseEnter={() => this.setState(getRandomColors())}
       >
         {this.props.children}
       </StyledGridItem>
