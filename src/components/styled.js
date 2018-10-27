@@ -34,204 +34,200 @@ const StyledGridItem = styled('div')`
 
 const colors = [
   {
-    foregroundColor: '#f6a843',
+    foregroundColor: 'white',
     backgroundColor: '#383856',
   },
   {
-    foregroundColor: '#86d855',
+    foregroundColor: 'white',
     backgroundColor: '#181c0f',
   },
   {
-    foregroundColor: '#339a40',
+    foregroundColor: 'white',
     backgroundColor: '#000f47',
   },
   {
-    foregroundColor: '#8a8e38',
+    foregroundColor: 'white',
     backgroundColor: '#20030f',
   },
   {
-    foregroundColor: '#14116a',
+    foregroundColor: 'black',
     backgroundColor: '#08b690',
   },
   {
-    foregroundColor: '#f92420',
+    foregroundColor: 'white',
     backgroundColor: '#0c0517',
   },
   {
-    foregroundColor: '#757fa2',
+    foregroundColor: 'white',
     backgroundColor: '#2d0628',
   },
   {
-    foregroundColor: '#034f50',
+    foregroundColor: 'black',
     backgroundColor: '#eeb456',
   },
   {
-    foregroundColor: '#792298',
+    foregroundColor: 'black',
     backgroundColor: '#b3da4a',
   },
   {
-    foregroundColor: '#626b65',
+    foregroundColor: 'black',
     backgroundColor: '#f3fc86',
   },
   {
-    foregroundColor: '#f513eb',
+    foregroundColor: 'white',
     backgroundColor: '#1d0461',
   },
   {
-    foregroundColor: '#e5c726',
+    foregroundColor: 'white',
     backgroundColor: '#23155c',
   },
   {
-    foregroundColor: '#9a7d98',
+    foregroundColor: 'white',
     backgroundColor: '#030c4a',
   },
   {
-    foregroundColor: '#e0f51b',
-    backgroundColor: '#6b4161',
-  },
-  {
-    foregroundColor: '#c9b035',
+    foregroundColor: 'white',
     backgroundColor: '#503188',
   },
   {
-    foregroundColor: '#b4d969',
+    foregroundColor: 'white',
     backgroundColor: '#002d54',
   },
   {
-    foregroundColor: '#519780',
+    foregroundColor: 'white',
     backgroundColor: '#041850',
   },
   {
-    foregroundColor: '#eb7a03',
+    foregroundColor: 'white',
     backgroundColor: '#173224',
   },
   {
-    foregroundColor: '#fe787d',
+    foregroundColor: 'white',
     backgroundColor: '#1622a0',
   },
   {
-    foregroundColor: '#2cf1f3',
+    foregroundColor: 'white',
     backgroundColor: '#19495a',
   },
   {
-    foregroundColor: '#4bf763',
+    foregroundColor: 'white',
     backgroundColor: '#5b2577',
   },
   {
-    foregroundColor: '#45b63b',
+    foregroundColor: 'white',
     backgroundColor: '#292b15',
   },
   {
-    foregroundColor: '#f9652b',
+    foregroundColor: 'white',
     backgroundColor: '#191f22',
   },
   {
-    foregroundColor: '#770ff0',
+    foregroundColor: 'black',
     backgroundColor: '#dbff92',
   },
   {
-    foregroundColor: '#e0b03e',
+    foregroundColor: 'white',
     backgroundColor: '#150d6d',
   },
   {
-    foregroundColor: '#6de131',
+    foregroundColor: 'white',
     backgroundColor: '#63293f',
   },
   {
-    foregroundColor: '#678d9d',
+    foregroundColor: 'white',
     backgroundColor: '#3b091c',
   },
   {
-    foregroundColor: '#f29881',
+    foregroundColor: 'white',
     backgroundColor: '#480840',
   },
   {
-    foregroundColor: '#f3d5c9',
+    foregroundColor: 'white',
     backgroundColor: '#714b35',
   },
   {
-    foregroundColor: '#dcda4a',
+    foregroundColor: 'white',
     backgroundColor: '#2120dc',
   },
   {
-    foregroundColor: '#df985b',
+    foregroundColor: 'white',
     backgroundColor: '#213977',
   },
   {
-    foregroundColor: '#e83f63',
+    foregroundColor: 'white',
     backgroundColor: '#160551',
   },
   {
-    foregroundColor: '#87c8a4',
+    foregroundColor: 'white',
     backgroundColor: '#2c3b83',
   },
   {
-    foregroundColor: '#7d3971',
+    foregroundColor: 'black',
     backgroundColor: '#c5cf96',
   },
   {
-    foregroundColor: '#06fe21',
+    foregroundColor: 'white',
     backgroundColor: '#18541f',
   },
   {
-    foregroundColor: '#daed28',
+    foregroundColor: 'white',
     backgroundColor: '#222232',
   },
   {
-    foregroundColor: '#336f53',
+    foregroundColor: 'black',
     backgroundColor: '#d0f3f9',
   },
   {
-    foregroundColor: '#c34493',
+    foregroundColor: 'black',
     backgroundColor: '#fffdf7',
   },
   {
-    foregroundColor: '#872902',
+    foregroundColor: 'black',
     backgroundColor: '#e5f95e',
   },
   {
-    foregroundColor: '#e37ae6',
+    foregroundColor: 'white',
     backgroundColor: '#022129',
   },
   {
-    foregroundColor: '#ce89d7',
+    foregroundColor: 'white',
     backgroundColor: '#11262e',
   },
   {
-    foregroundColor: '#9b9eab',
+    foregroundColor: 'white',
     backgroundColor: '#1a090b',
   },
   {
-    foregroundColor: '#df45a4',
+    foregroundColor: 'white',
     backgroundColor: '#02012f',
   },
   {
-    foregroundColor: '#3a2dbc',
+    foregroundColor: 'black',
     backgroundColor: '#fdca0f',
   },
   {
-    foregroundColor: '#2ed871',
+    foregroundColor: 'white',
     backgroundColor: '#1e19df',
   },
   {
-    foregroundColor: '#baa0b1',
+    foregroundColor: 'white',
     backgroundColor: '#0e1428',
   },
   {
-    foregroundColor: '#a45766',
+    foregroundColor: 'black',
     backgroundColor: '#effeba',
   },
   {
-    foregroundColor: '#817ff0',
+    foregroundColor: 'white',
     backgroundColor: '#1c1243',
   },
   {
-    foregroundColor: '#723539',
+    foregroundColor: 'black',
     backgroundColor: '#cbd040',
   },
   {
-    foregroundColor: '#29f5b6',
-    backgroundColor: '#8b0c3c',
+    foregroundColor: 'black',
+    backgroundColor: '#29f5b6',
   },
 ];
 
