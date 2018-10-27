@@ -32,7 +32,10 @@ export default ({
 
 export const query = graphql`
   query($name: String!) {
-    allFile(filter: { relativeDirectory: { eq: $name } }) {
+    allFile(
+      filter: { relativeDirectory: { eq: $name } }
+      sort: { fields: [name] }
+    ) {
       edges {
         node {
           id
