@@ -1,7 +1,5 @@
-WEEK 1
+# Febe
 
-FEBE
+# Mumtaaz
 
-Mumtaaz
-
-Na een onderzoek van de verschillende lokaties kies ik ervoor om verder te werken rond de ...
+Na een onderzoek van de verschillende locaties kies ik ervoor om verder te werken rond de ...
