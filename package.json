@@ -5,6 +5,7 @@
   "private": true,
   "author": "Haroen Viaene",
   "dependencies": {
+    "chroma-js": "^1.4.0",
     "emotion": "^9.2.12",
     "emotion-server": "^9.2.12",
     "gatsby": "^2.0.19",

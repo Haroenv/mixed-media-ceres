@@ -1,6 +1,7 @@
 import styled from 'react-emotion';
 import { Link } from 'gatsby';
 import React, { Component } from 'react';
+import chroma from 'chroma-js';
 
 export const border = '1px solid black';
 
@@ -21,58 +22,37 @@ const StyledGridItem = styled('div')`
   border-right: ${border};
   border-bottom: ${border};
   text-align: center;
+  color: black;
   background-color: ${props => props.backgroundColor};
-  color: ${props => props.foregroundColor};
 
   a {
     padding: 2em;
   }
 `;
-/*
-const colors = [
-  {
-    foregroundColor: 'white',
-    backgroundColor: 'red',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: 'black',
-  },
-  {
-    foregroundColor: 'white',
-    backgroundColor: 'blue',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: 'green',
-  },
-  {
-    foregroundColor: 'black',
-    backgroundColor: 'yellow',
-  },
-];
-*/
 
-const getRandom255 = () => Math.round(Math.random() * 255);
-const getRandomColors = () => ({
-  foregroundColor: 'black',
-  backgroundColor: `rgb(${[getRandom255(), getRandom255(), getRandom255()].join(
-    ','
-  )})`,
-});
+const AA_RATE = 4.5;
+
+const getRandomColor = () => {
+  const color = chroma.random();
+  if (chroma.contrast(color, 'black') < AA_RATE) {
+    return getRandomColor();
+  }
+  return color.toString();
+};
+
 //const getRandomColors = () => colors[Math.floor(Math.random() * colors.length)];
 
 export class GridItem extends Component {
   state = {
-    foregroundColor: 'black',
     backgroundColor: 'white',
   };
   render() {
     return (
       <StyledGridItem
-        foregroundColor={this.state.foregroundColor}
         backgroundColor={this.state.backgroundColor}
-        onMouseEnter={() => this.setState(getRandomColors())}
+        onMouseEnter={() =>
+          this.setState({ backgroundColor: getRandomColor() })
+        }
       >
         {this.props.children}
       </StyledGridItem>
