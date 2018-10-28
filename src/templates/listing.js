@@ -11,20 +11,15 @@ export default ({
   return (
     <Layout>
       <GridContainer>
-        {edges
-          .map(({ node: { id, name, fields, childMarkdownRemark } }) => {
-            const slug = fields ? fields.slug : childMarkdownRemark.fields.slug;
-            return {
-              id,
-              name,
-              slug,
-            };
-          })
-          .map(({ id, slug, name }) => (
-            <GridItem key={id}>
-              <TextLink to={slug}>{name}</TextLink>
-            </GridItem>
-          ))}
+        {edges.map(({ node: { id, name, fields, childMarkdownRemark } }) => (
+          <GridItem key={id}>
+            <TextLink
+              to={fields ? fields.slug : childMarkdownRemark.fields.slug}
+            >
+              {name}
+            </TextLink>
+          </GridItem>
+        ))}
       </GridContainer>
     </Layout>
   );
