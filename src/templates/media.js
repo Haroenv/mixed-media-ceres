@@ -1,17 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Iframe } from '../components/styled';
+import { Content, Iframe } from '../components/styled';
 import Layout from '../components/layout';
 import Img from 'gatsby-image';
 
 export default ({
   data: {
-    file: { publicURL, childImageSharp },
+    file: { publicURL, image, markdown },
   },
 }) => (
   <Layout>
-    {childImageSharp ? (
-      <Img fluid={childImageSharp.fluid} />
+    {image ? (
+      <Img fluid={image.fluid} />
+    ) : markdown ? (
+      <Content dangerouslySetInnerHTML={{ __html: markdown.html }} />
     ) : (
       <Iframe src={publicURL} />
     )}
@@ -22,10 +24,13 @@ export const query = graphql`
   query($slug: String!) {
     file(fields: { slug: { eq: $slug } }) {
       publicURL
-      childImageSharp {
+      image: childImageSharp {
         fluid(maxWidth: 5120, quality: 98, traceSVG: { blackOnWhite: true }) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
+      }
+      markdown: childMarkdownRemark {
+        html
       }
     }
   }

@@ -3,10 +3,7 @@ const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if (
-    node.internal.type === 'MarkdownRemark' ||
-    (node.internal.type === 'File' && node.extension !== 'md')
-  ) {
+  if (node.internal.type === 'File') {
     const slug = createFilePath({ node, getNode }).replace(/\s/g, '-');
     createNodeField({
       node,
@@ -21,15 +18,6 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise(resolve => {
     graphql(`
       {
-        info: allMarkdownRemark {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
         weeks: allDirectory(filter: { relativePath: { ne: "" } }) {
           edges {
             node {
@@ -37,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        media: allFile(filter: { extension: { nin: ["md"] } }) {
+        media: allFile {
           edges {
             node {
               extension
@@ -55,15 +43,6 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/listing.js`),
           context: {
             name: node.name,
-          },
-        });
-      });
-      result.data.info.edges.forEach(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/markdown.js`),
-          context: {
-            slug: node.fields.slug,
           },
         });
       });

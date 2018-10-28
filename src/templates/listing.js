@@ -11,13 +11,9 @@ export default ({
   return (
     <Layout>
       <GridContainer>
-        {edges.map(({ node: { id, name, fields, childMarkdownRemark } }) => (
+        {edges.map(({ node: { id, name, fields: { slug } } }) => (
           <GridItem key={id}>
-            <TextLink
-              to={fields ? fields.slug : childMarkdownRemark.fields.slug}
-            >
-              {name}
-            </TextLink>
+            <TextLink to={slug}>{name}</TextLink>
           </GridItem>
         ))}
       </GridContainer>
@@ -36,11 +32,6 @@ export const query = graphql`
           id
           name
           relativeDirectory
-          childMarkdownRemark {
-            fields {
-              slug
-            }
-          }
           fields {
             slug
           }
