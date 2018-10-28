@@ -25,7 +25,7 @@ const StyledGridItem = styled('div')`
   color: black;
   background-color: ${props => props.backgroundColor};
 
-  a {
+  * {
     padding: 2em;
   }
 `;
