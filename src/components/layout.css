@@ -6,6 +6,17 @@ body {
     sans-serif;
 }
 
+html {
+  height: 100vh;
+}
+
+body,
+#___gatsby,
+#___gatsby > div,
+main {
+  height: 100%;
+}
+
 h1 {
   font-weight: 900;
 }
