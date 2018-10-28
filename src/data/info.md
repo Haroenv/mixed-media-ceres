@@ -1,15 +1,11 @@
 # Over dit project
 
-Hier geef je wat meer info over de pagina zelf.
+Op deze pagina vind je een overzicht van het werk dat zowel Febe Vermeulen als Mumtaaz Viaene voor het vak Mixed Media Experiment geproduceerd hebben gebuurende het hele simester.
 
-## Subtitel
+## thema
 
-Bla bla bla.
+Mumtaaz is gestart met het werken rond ruimtelijke en texturale compexiteiten in een gebouw dat haar inorm aanprak, vooral doordat je de tijd er in kunt aflezen door de veelheid aan aanbouwen.
 
-Excepteur ullamco deserunt ullamco aute. Proident velit fugiat culpa quis exercitation minim aliqua dolor veniam dolor. Tempor nulla fugiat aliquip nulla aliquip in enim qui duis consequat.
+Febe is gestart met experimenten over schaal, geheugen en geluid. Ze trachte een plaats vast te leggen door middel van wat ze er over kon onthouden.
 
-Nisi tempor est voluptate ipsum velit quis ad et in labore enim tempor laboris. Anim sunt laborum eu eu aliquip eiusmod. Aute voluptate ad et velit sunt et.
-
-Officia et dolore enim reprehenderit aliqua incididunt in qui adipisicing. Cillum cupidatat anim minim do fugiat ipsum. Cillum consectetur cupidatat ipsum commodo cupidatat. Excepteur do consectetur incididunt qui do incididunt enim ad. Lorem veniam proident ad incididunt non deserunt anim amet reprehenderit. Excepteur eu aliqua ipsum irure commodo cillum labore laboris velit aute irure. Officia cillum pariatur duis sint consectetur in.
-
-Proident officia officia proident velit ut pariatur. Et laborum laborum adipisicing incididunt laborum. Lorem aliquip proident anim nisi pariatur duis.
+Wanneer de twee samen begonnen werken hebben ze ervoor gekozen om door middel van druktechnieken de herinnnering van het gebouw vast te leggen. Door wekelijks terug te keren naar de zelfde lokatie en thuis vast te leggen wat ze er nog van onthielden. Dit werd op een plexiplaat ge-etst en dan op meerdere technieken verwerkt.
