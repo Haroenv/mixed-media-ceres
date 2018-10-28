@@ -38,17 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        images: allFile(filter: { extension: { nin: ["md", "pdf"] } }) {
-          edges {
-            node {
-              extension
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        pdfs: allFile(filter: { extension: { eq: "pdf" } }) {
+        media: allFile(filter: { extension: { nin: ["md"] } }) {
           edges {
             node {
               extension
@@ -78,19 +68,10 @@ exports.createPages = ({ graphql, actions }) => {
           },
         });
       });
-      result.data.images.edges.forEach(({ node }) => {
+      result.data.media.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/image.js`),
-          context: {
-            slug: node.fields.slug,
-          },
-        });
-      });
-      result.data.pdfs.edges.forEach(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/pdf.js`),
+          component: path.resolve(`./src/templates/media.js`),
           context: {
             slug: node.fields.slug,
           },
