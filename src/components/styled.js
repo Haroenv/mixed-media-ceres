@@ -40,8 +40,6 @@ const getRandomColor = () => {
   return color.toString();
 };
 
-//const getRandomColors = () => colors[Math.floor(Math.random() * colors.length)];
-
 export class GridItem extends Component {
   state = {
     backgroundColor: 'white',
@@ -68,4 +66,10 @@ export const TextLink = styled(Link)`
 
 export const Spacer = styled('span')`
   color: transparent;
+`;
+
+export const Iframe = styled('iframe')`
+  border: none;
+  width: 100%;
+  height: 100%;
 `;
