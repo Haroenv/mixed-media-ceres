@@ -7,7 +7,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     node.internal.type === 'MarkdownRemark' ||
     (node.internal.type === 'File' && node.extension !== 'md')
   ) {
-    const slug = createFilePath({ node, getNode });
+    const slug = createFilePath({ node, getNode }).replace(/\s/g, '-');
+    console.log(slug);
     createNodeField({
       node,
       name: 'slug',
@@ -37,9 +38,20 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        images: allFile(filter: { extension: { ne: "md" } }) {
+        images: allFile(filter: { extension: { nin: ["md", "pdf"] } }) {
           edges {
             node {
+              extension
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        pdfs: allFile(filter: { extension: { eq: "pdf" } }) {
+          edges {
+            node {
+              extension
               fields {
                 slug
               }
@@ -70,6 +82,15 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/image.js`),
+          context: {
+            slug: node.fields.slug,
+          },
+        });
+      });
+      result.data.pdfs.edges.forEach(({ node }) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/pdf.js`),
           context: {
             slug: node.fields.slug,
           },
