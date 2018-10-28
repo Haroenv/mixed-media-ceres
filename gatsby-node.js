@@ -8,7 +8,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     (node.internal.type === 'File' && node.extension !== 'md')
   ) {
     const slug = createFilePath({ node, getNode }).replace(/\s/g, '-');
-    console.log(slug);
     createNodeField({
       node,
       name: 'slug',
