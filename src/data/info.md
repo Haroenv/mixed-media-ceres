@@ -4,7 +4,7 @@ Op deze pagina vind je een overzicht van het werk dat zowel Febe Vermeulen als M
 
 ## thema
 
-Mumtaaz is gestart met het werken rond ruimtelijke en texturale compexiteiten in een gebouw dat haar inorm aanprak, vooral doordat je de tijd er in kunt aflezen door de veelheid aan aanbouwen.
+Mumtaaz is gestart met het werken rond ruimtelijke en texturale compexiteiten in een gebouw dat haar inorm aanprak, vooral doordat je de tijd in het gebouw kunt aflezen door middel van de veelheid aan bijbouwen en assimilaties.
 
 Febe is gestart met experimenten over schaal, geheugen en geluid. Ze trachte een plaats vast te leggen door middel van wat ze er over kon onthouden.
 
