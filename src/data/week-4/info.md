@@ -1,1 +1,3 @@
-Hallo dit is de tekst voor week 4
+#WEEK 4
+
+Binnen het streven naar het vastleggen van de subjectiviteit van zowel waarneming als herinnering kozen we ervoor om deze week elk verder te werken op verschillende etsplaten (uit plexi) en de twee resultaten met hun eigen nadrukken vervolgens aan elkaar te toesten. We testen tijdens deze week ook een aantal nieuwe druktechnieken
