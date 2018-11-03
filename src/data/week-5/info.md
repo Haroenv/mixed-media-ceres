@@ -1,1 +1,3 @@
-Hallo dit is de tekst voor week 5
+We zijn verdergegaan met ons onderzoek over de als maar gedetaïleerdere waarneming van de gebouw via het medium van een ets. We merkten wel op dat deze steeds verder begon te staan van de objectieve waarneming. 
+
+We hebben ook een onderzoek gedaan naar hoe we een ruimtelijke vertaling kunnen doen van deze herinnering. We kozen ervoor dit te doen door een soort verwarrende wandeling te creëren, waarin je geconfronteerd wordt met voor ons sprekende beelden uit onze herinnering. Hiervoor wilden we graag een grotere schaal hanteren en een ander medium uit testen om mee te experimenteren naar druktechnieken
