@@ -26,7 +26,7 @@ export const query = graphql`
       publicURL
       image: childImageSharp {
         fluid(maxWidth: 5120, quality: 98, traceSVG: { blackOnWhite: true }) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
       markdown: childMarkdownRemark {
